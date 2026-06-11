@@ -1,7 +1,12 @@
 import {Schema, model} from "mongoose";
 
 const Esqueleto_de_tabla = new Schema({
-    coment:String
+    alumno: String,
+    materias: String,
+    calificacion_por_materia: Number,
+    asistencias: Number,
+    promedio: Number,
+    grado: Number,
 })
 
- export const Tabla = new model("Tabla de quejas UTMA", Esqueleto_de_tabla)
+ export const Tabla = new model("registros alumnos", Esqueleto_de_tabla)
